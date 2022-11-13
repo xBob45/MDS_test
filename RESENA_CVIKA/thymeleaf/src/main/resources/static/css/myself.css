@@ -1,0 +1,17 @@
+h1 {
+    font-size: 40px;
+
+    /*Odtučnění nadpisů typu H1*/
+    font-weight: normal;
+}
+
+/*Css třída pro obarvení pouze jména*/
+.name {
+    color: red;
+}
+
+/*Css třída pro obravený a tučný nápis s ID*/
+.id {
+    color: greenyellow;
+    font-weight: bold;
+}

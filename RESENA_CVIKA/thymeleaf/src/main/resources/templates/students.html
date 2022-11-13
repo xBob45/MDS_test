@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+    <title>Students</title>
+</head>
+<tbody>
+<!--Thymeleaf verze IF podmínky-->
+<div th:if="${!students.isEmpty()}">
+    <table>
+        <th><b>ID</b></th>
+        <th><b>Name</b></th>
+        <th><b>Surname</b></th>
+        <th><b>Year</b></th>
+
+        <!--Thymeleaf verze for-each cyklu-->
+        <tr th:each="student: ${students}">
+            <td th:text="${student.id}"/>
+            <td th:text="${student.name}"/>
+            <td th:text="${student.surname}"/>
+            <td th:text="${student.year}"/>
+        </tr>
+    </table>
+</div>
+
+<!--Thymeleaf verze ELSE-->
+<div th:unless="${!students.isEmpty()}">
+    <p> No student with ID <span th:text="${id}"/> was found! </p>
+</div>
+</tbody>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> <!-- Thymeleaf import -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{'/css/'+ ${name} + '.css'}">
+    <title>Complex example</title>
+</head>
+<body>
+<h1>Dynamic Page Example</h1>
+<hr>
+<h2 th:text="'First name: ' + ${name}"></h2>
+</body>
+</html>

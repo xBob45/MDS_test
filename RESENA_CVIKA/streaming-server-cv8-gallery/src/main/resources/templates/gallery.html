@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Gallery</title>
+</head>
+<body>
+    <h1>Media Gallery</h1>
+    <h2>Jmeno a Prijmeni. ID</h2>
+
+    <table class="table">
+        <thead class = "thead-light">
+        <tr>
+            <th class="text-left">Video</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="movie : ${moviesItems}">
+            <td><a th:href="@{'video/'+${movie.getFile_name()}}"><img th:src="@{'images/'+${movie.getImage_name()}}" width="300" height="169"/></a></td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
