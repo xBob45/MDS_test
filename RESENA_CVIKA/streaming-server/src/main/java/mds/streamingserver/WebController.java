@@ -14,11 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 
-@Controller
+@Controller //NA TO BACHA!!!!!
 public class WebController {
 
     //Component pro zasílání potřebných částí souboru videa
-    private MyResourceHttpRequestHandler handler;
+    private MyResourceHttpRequestHandler handler; //Nachazi se v /Components
 
     // Anotace Autowired vytvoří závislost na objektu handler, který je využit v metodě byterange
     @Autowired
@@ -45,7 +45,7 @@ public class WebController {
     public void byterange(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         // Vytvoření požadavku na soubor z proměnné String MP4_FILE
-        request.setAttribute(MyResourceHttpRequestHandler.ATTR_FILE, MP4_FILE);
+        request.setAttribute(MyResourceHttpRequestHandler.ATTR_FILE, MP4_FILE); //ATTR_FILE je v MyResource . . .
 
         handler.handleRequest(request, response);
     }

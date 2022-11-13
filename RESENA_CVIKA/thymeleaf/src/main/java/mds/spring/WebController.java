@@ -51,8 +51,6 @@ public class WebController {
     }
 
 
-
-
     //--------------- Řešení samostatné práce ---------------//
 
     @GetMapping("/myself")
