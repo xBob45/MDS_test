@@ -21,5 +21,15 @@
         - css
           - css soubory 
       - **templates**
-        - html soubory(**názvy souborů musí být stejné jako stringy, které se vrací z metod**)  
+        - html soubory(**názvy souborů musí být stejné jako stringy, které se vrací z metod**) 
+
+
+**streaming_server-cv6**
+- src
+  - main
+    - java
+      - mds.streamingserver
+        - **component** - Třída, která se stará o dotazy pouze části videa(určitého počtu                                 bajtů)
+        - model - Třída WebController
+
 
