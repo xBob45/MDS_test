@@ -29,7 +29,21 @@
   - main
     - java
       - mds.streamingserver
-        - **component** - Třída, která se stará o dotazy pouze části videa(určitého počtu                                 bajtů)
-        - model - Třída WebController
+        - **component**
+          - MyRecourceRequestHandler - Třída, která se stará o dotazy pouze části videa(určitého                                        počtu bajtů)
+        - model
+        - WebController - třída
+        
+        
+**streaming_server-cv7**
+- src
+  - main
+    - java
+      - mds.streamingserver
+        - **component**
+          - MyRecourceRequestHandler - Třída, která se stará o dotazy pouze části videa(určitého                                        počtu bajtů)
+        - **model**
+          - Movie
+        - WebController -třída  
 
 
