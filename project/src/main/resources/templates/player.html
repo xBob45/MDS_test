@@ -9,7 +9,7 @@
     <script type="text/javascript" th:src="@{/js/ControlBar.js}"></script>
     <script>
         function startVideo() {
-            const url = 'http://localhost:8080/dash/[[${name}]]';
+            const url = 'http://localhost:8080/dash/[[${stream}]]/manifest.mpd';
             var player = dashjs.MediaPlayer().create();
             player.initialize(document.querySelector(".videoContainer video"), url, true);
             var controlbar = new ControlBar(player);

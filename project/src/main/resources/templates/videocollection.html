@@ -5,9 +5,6 @@
     <title>Video Collection</title>
 </head>
 <body>
-<h1>Media Gallery</h1>
-<h2>Jmeno a Prijmeni. ID</h2>
-
 <table class="table">
     <thead class = "thead-light">
     <tr>
@@ -15,8 +12,8 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="movie : ${moviesItems}">
-        <td><a th:href="@{'video/'+${movie.getFile_name()}}"><img th:src="@{'images/'+${movie.getImage_name()}}" width="300" height="169"/></a></td>
+    <tr th:each="Stream : ${moviesItems}">
+        <td><a th:href="@{'player/'+${movie.getFile_name()}}"><img th:src="@{'images/'+${movie.getImage_name()}}" width="300" height="169"/></a></td>
     </tr>
     </tbody>
 </table>

@@ -20,6 +20,9 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
 
+import static mds.project.FilePaths.DASH_DIRECTORY;
+import static mds.project.FilePaths.SUFFIX;
+
 //Třída, která funguje jako ArrayList, pouze je zde naše vlastní obsluha a tvorba objektů
 public class VideoLibrary extends ArrayList<String> {
 
@@ -34,8 +37,7 @@ public class VideoLibrary extends ArrayList<String> {
         this.keepSuffix = keepSuffix;
         this.frameTime = frameTime;
 
-        //Nalezení souborů a vytvoření obrázků
-        fillMoviesWithImages();
+        discoverFiles(Path.of(searchDirectory), keepSuffix);
     }
 
     //Naplnění jednotlivých objektů, tvorba obrázků

@@ -9,14 +9,11 @@ import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.thymeleaf.util.StringUtils;
 import mds.streamingserver.model.VideoLibrary;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import java.io.File;
 import java.io.IOException;
-import java.security.PublicKey;
 import java.util.HashMap;
 import java.util.Map;
 
