@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/myStyle.css"> <!-- Nalinkovane CSS -->
+    <meta charset="UTF-8">
+    <title>Project-219263</title>
+</head>
+<body>
+  <h2>Vojtech Moravec</h2>
+
+  <form method='post' action='video'>
+      <label for="url"> Video URL</label>
+      <input id="url" type='text' name='url'/><br>
+
+      <label for="height"> Video height</label>
+      <input id="height" type='text' name='height'/><br>
+
+      <input type='submit' value='Přehrát'/>
+  </form>
+
+  <form>
+      <button formaction="/videocollection">Videa</button>
+  </form>
+
+
+  <form method='post' action='streaming'>
+      <input type="radio" name="url" id="video" value="file">
+      <label for="video">Local video</label><br>
+
+      <input type="radio" name="url" id="dashStream" value="dash/manifest.mpd" checked>
+      <label for="dashStream">MPEG-DASH stream</label><br>
+
+      <input type="submit" value="Play selected stream">
+
+  </form>
+
+
+</body>
+</html>

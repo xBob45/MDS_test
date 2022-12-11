@@ -1,4 +1,0 @@
-1)data = List se seznamem studentů
-2)model = Konstruktor Student a přetížená metoda toString()
-3)service = Třída s metodami pro získání seznamu studentů a filtraci na základě id
-

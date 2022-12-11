@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+    <title>Dynamic Page</title>
+</head>
+<body>
+<!--    <p th:text = " 'Welcome to our page ' + ${name} + '!' "></p>-->
+    <p> Welcome to our page <b th:text="${name}"/>! </p>
+    <p> Your ID is <b th:text="${id}"/></p>
+</body>
+</html>
